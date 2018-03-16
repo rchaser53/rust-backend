@@ -1,0 +1,18 @@
+[package]
+authors = ["rchaser53 <tayoshizawa29@gmail.com>"]
+name = "backend"
+version = "0.1.0"
+
+[dependencies]
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+serde = "1.0.33"
+serde_derive = "1.0.33"
+
+[dependencies.rocket_contrib]
+default-features = false
+features = [
+    "handlebars_templates",
+    "tera_templates",
+]
+version = "*"
